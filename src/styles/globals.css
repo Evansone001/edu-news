@@ -1,0 +1,307 @@
+/* src/styles/globals.css */
+
+/* Tailwind v4: explicitly reference tailwind utilities when using @apply */
+@reference "tailwindcss";
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@plugin "@tailwindcss/typography";
+
+/* Ghost Koenig Editor Styles */
+.prose .kg-card {
+  margin: 2rem 0;
+}
+
+.prose .kg-image-card img {
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.prose .kg-bookmark-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.prose .kg-callout-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #f3f4f6;
+  border-left: 4px solid #3b82f6;
+}
+
+/* =========================
+   DESIGN TOKENS (CSS vars)
+   ========================= */
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-primary: #0b74ff;
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark mode tokens (system preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+  }
+}
+
+/* =========================
+   BASE LAYER (use CSS variables directly)
+   ========================= */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* =========================
+   NORMALIZE / HELPERS
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   UTILITIES (BASE ONLY) — no variant-prefixed utilities inside @apply
+   ========================= */
+
+/* wrapper: base utilities only; responsive adjustments below using standard media queries */
+.wrapper {
+  max-width: 80rem;
+  /* 7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  /* px-4 */
+  padding-right: 1rem;
+  /* px-4 */
+  width: 100%;
+}
+
+/* responsive adjustments using standard media queries */
+@media (min-width: 640px) {
+  .wrapper {
+    padding-left: 1.5rem;
+    /* px-6 */
+    padding-right: 1.5rem;
+    /* px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding-left: 2rem;
+    /* px-8 */
+    padding-right: 2rem;
+    /* px-8 */
+  }
+}
+
+/* image padding (base) + responsive via standard media queries */
+.image-padding img {
+  margin-top: 2rem;
+  /* my-8 */
+  margin-bottom: 2rem;
+  /* my-8 */
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* shadow-lg */
+}
+
+@media (min-width: 768px) {
+  .image-padding img {
+    margin-top: 3rem;
+    /* my-12 */
+    margin-bottom: 3rem;
+    /* my-12 */
+  }
+}
+
+/* lists */
+.list-nested li {
+  margin-left: 1.5rem;
+  /* ml-6 */
+  padding-top: 0.5rem;
+  /* py-2 */
+  padding-bottom: 0.5rem;
+  /* py-2 */
+  list-style-type: disc;
+  /* list-disc */
+}
+
+.list-nested li li {
+  margin-left: 2rem;
+  /* ml-8 */
+}
+
+/* link base (keep interactive states in markup) */
+.link a {
+  text-decoration-line: underline;
+  /* underline */
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  /* decoration-2 */
+  text-underline-offset: 4px;
+  /* underline-offset-4 */
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  /* transition-colors */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* custom scrollbar (pure CSS) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+
+  33% {
+    transform: translateY(-10px) translateX(5px) rotate(2deg);
+  }
+
+  66% {
+    transform: translateY(5px) translateX(-5px) rotate(-1deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s var(--animation-timing) infinite;
+}
+
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-8px) translateX(-3px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(4px) translateX(3px) rotate(1deg);
+  }
+
+  75% {
+    transform: translateY(-4px) translateX(-1px) rotate(0deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s var(--animation-timing) infinite;
+}
+
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s var(--animation-timing) infinite;
+}
+
+/* =========================
+   PRINT / SAFE-AREA
+   ========================= */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.3;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+.scrollbar-gap-fill::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--scrollbar-width, 0px);
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+:root {
+  --scrollbar-width: 0px;
+}
