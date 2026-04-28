@@ -4,7 +4,7 @@ A modern, high-performance education news platform built with Next.js and Ghost 
 
 ![EDUNEWS](public/images/edunews-logo.svg)
 
-## 🚀 Features
+## Features
 
 - **Headless CMS Architecture**: Ghost CMS backend with Next.js frontend
 - **Real-time Features**: Live reader presence counter with Upstash Redis
@@ -16,7 +16,7 @@ A modern, high-performance education news platform built with Next.js and Ghost 
 - **Authentication**: Google, Apple, and Email sign-in
 - **Dockerized**: Production-ready Docker setup
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
@@ -32,7 +32,7 @@ A modern, high-performance education news platform built with Next.js and Ghost 
 └─────────────────┘
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS
 - **Backend**: Ghost CMS (Headless)
@@ -41,14 +41,14 @@ A modern, high-performance education news platform built with Next.js and Ghost 
 - **Hosting**: VPS with Nginx reverse proxy
 - **CDN**: Cloud-ready with static optimization
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 20.x or later
 - npm or pnpm
 - Docker & Docker Compose (for production)
 - Ghost CMS instance (local or remote)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone and Install
 
@@ -93,7 +93,7 @@ npm run build
 npm start
 ```
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Production Setup
 
@@ -123,7 +123,7 @@ PORT=3001
 NODE_ENV=production
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -147,7 +147,7 @@ NODE_ENV=production
 └── next.config.ts        # Next.js configuration
 ```
 
-## 🔌 Ghost CMS Integration
+## Ghost CMS Integration
 
 ### Content API
 
@@ -168,7 +168,7 @@ Configure Ghost webhooks to trigger rebuilds on content changes:
 1. Ghost Admin → Settings → Integrations
 2. Add webhook for "Post published" → `https://edunews.co.ke/api/revalidate`
 
-## 📝 Content Management
+## Content Management
 
 ### Creating Content
 
@@ -183,7 +183,7 @@ Configure Ghost webhooks to trigger rebuilds on content changes:
 - Format: WebP or JPEG
 - Use descriptive alt text for accessibility
 
-## 🔧 Configuration
+## Configuration
 
 ### Nginx Reverse Proxy
 
@@ -216,14 +216,14 @@ Use Certbot for free Let's Encrypt certificates:
 certbot --nginx -d edunews.co.ke -d www.edunews.co.ke
 ```
 
-## 📊 Performance
+## Performance
 
 - **Lighthouse Score**: 95+ across all categories
 - **Core Web Vitals**: Optimized for LCP, FID, CLS
 - **Image Optimization**: Next.js Image component with WebP
 - **Static Generation**: ISR for dynamic content
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -231,11 +231,11 @@ certbot --nginx -d edunews.co.ke -d www.edunews.co.ke
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 [MIT](LICENSE)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Ghost CMS](https://ghost.org/) for the powerful headless platform
 - [Next.js](https://nextjs.org/) for the React framework
@@ -244,5 +244,5 @@ certbot --nginx -d edunews.co.ke -d www.edunews.co.ke
 
 ---
 
-**Built with ❤️ for education in Kenya and beyond.**
+Built for education in Kenya and beyond.
 
