@@ -43,7 +43,7 @@ hooks/
 components/
   ReaderPresenceBadge.tsx
 
-## 6. Replace the fake counter in NewSheriaHero.tsx
+## 6. Replace the fake counter in EDUNEWS Hero.tsx
 Remove:
   const [visitorCount, setVisitorCount] = useState(347);
   useEffect(() => { /* random walk */ }, []);

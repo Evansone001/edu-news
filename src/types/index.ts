@@ -163,14 +163,13 @@ export interface ProfessionalUser {
   displayName: string;
   email: string;
   photoURL?: string;
-  role: 'attorney' | 'judge' | 'legal_professional' | 'student' | 'subscriber' | 'corporate';
-  plan: 'free' | 'pro' | 'enterprise' | 'corporate';
+  role: 'student' | 'teacher' | 'parent' | 'educator' | 'subscriber';
+  plan: 'free' | 'pro' | 'premium';
   region: 'na' | 'eu' | 'asia' | 'africa' | 'sa' | 'oceania';
   language: string;
-  firm?: string;
-  barNumber?: string;
-  jurisdiction?: string[];
-  specialties?: string[];
+  institution?: string;
+  subjects?: string[];
+  interests?: string[];
   lastActive: Date;
   notifications: number;
 }

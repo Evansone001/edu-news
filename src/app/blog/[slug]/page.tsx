@@ -66,10 +66,10 @@ interface BlogPostPageProps {
 function mapGhostPostToPost(ghostPost: GhostPost): Post {
   const author: Author = {
     id: ghostPost.primary_author?.name || 'default',
-    name: ghostPost.primary_author?.name || 'News  Sheria Team',
-    slug: ghostPost.primary_author?.name ? ghostPost.primary_author.name.toLowerCase().replace(/\s+/g, '-') : 'news-sheria',
+    name: ghostPost.primary_author?.name || 'EDUNEWS Team',
+    slug: ghostPost.primary_author?.name ? ghostPost.primary_author.name.toLowerCase().replace(/\s+/g, '-') : 'edunews-team',
     image: ghostPost.primary_author?.profile_image || '/images/default-author.png',
-    title: 'Legal Analyst',
+    title: 'Education Writer',
     bio: '',
   };
 
@@ -275,10 +275,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   />
                 </div>
                 <div className="text-center md:text-left flex-1">
-                  <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Editorial Authority</div>
+                  <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Featured Author</div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">{post.author.name}</h3>
                   <p className="text-gray-600 text-base leading-relaxed">
-                    {post.author.bio || "Dedicated legal professional sharing intelligence on Kenyan law and court updates. Expertise in constitutional law and digital compliance."}
+                    {post.author.bio || "Passionate education writer sharing insights on Kenyan education, teaching strategies, and learning resources. Dedicated to empowering students and educators."}
                   </p>
                 </div>
               </div>             

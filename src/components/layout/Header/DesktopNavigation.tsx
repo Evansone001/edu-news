@@ -24,8 +24,8 @@ import {
 import { Logo } from './Logo';
 
 // Loading Skeleton Component
-const HeaderSkeleton = () => (
-  <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+export const HeaderSkeleton = () => (
+  <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 border-b border-gray-200/50 dark:border-gray-800/50">
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
@@ -51,8 +51,8 @@ interface UserData {
   displayName: string | null;
   email: string | null;
   photoURL: string | null;
-  role?: 'attorney' | 'judge' | 'legal_professional' | 'student' | 'subscriber' | 'corporate';
-  plan?: 'free' | 'pro' | 'enterprise' | 'corporate';
+  role?: 'student' | 'teacher' | 'parent' | 'educator' | 'subscriber';
+  plan?: 'free' | 'pro' | 'premium';
   region?: 'na' | 'eu' | 'asia' | 'africa' | 'sa' | 'oceania';
 }
 
@@ -91,16 +91,10 @@ export const ProfessionalHeader: React.FC<HeaderProps> = ({
   const [isNavDropdownOpen, setIsNavDropdownOpen] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
-  
+
   const userMenuRef = useRef<HTMLDivElement>(null);
   const searchRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoaded(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -136,10 +130,6 @@ export const ProfessionalHeader: React.FC<HeaderProps> = ({
     setIsUserMenuOpen(false);
   }, [onQuickAction]);
 
-  if (!isLoaded) {
-    return <HeaderSkeleton />;
-  }
-
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
@@ -155,7 +145,7 @@ export const ProfessionalHeader: React.FC<HeaderProps> = ({
   return (
     <>
       {/* Professional Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-gray-950/70 border-b border-gray-200/50 dark:border-gray-800/50 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50 shadow-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between gap-4">
             
@@ -344,15 +334,15 @@ export const ProfessionalHeader: React.FC<HeaderProps> = ({
                             <Bookmark className="h-4 w-4 text-gray-600 dark:text-gray-400 mb-1" />
                             <span className="text-xs font-medium">Save</span>
                           </button>
-                          <button onClick={() => handleQuickAction('download_brief')} className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                          <button onClick={() => handleQuickAction('download_article')} className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                             <Download className="h-4 w-4 text-gray-600 dark:text-gray-400 mb-1" />
-                            <span className="text-xs font-medium">Brief</span>
+                            <span className="text-xs font-medium">Save</span>
                           </button>
                         </div>
                       </div>
                       <div className="py-2">
                         <a href="/dashboard" className="flex items-center px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors" onClick={() => setIsUserMenuOpen(false)}>
-                          <User className="h-4 w-4 mr-3 text-gray-400" /> Professional Dashboard
+                          <User className="h-4 w-4 mr-3 text-gray-400" /> My Dashboard
                         </a>
                         <a href="/profile" className="flex items-center px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors" onClick={() => setIsUserMenuOpen(false)}>
                           <Settings className="h-4 w-4 mr-3 text-gray-400" /> Account Settings

@@ -15,14 +15,14 @@ const SITEMAP_SECTIONS = [
     {
         title: 'Categories',
         links: [
-            { name: 'Corporate Law', href: '/blog?category=corporate-law' },
-            { name: 'Criminal Law', href: '/blog?category=criminal-law' },
-            { name: 'Family Law', href: '/blog?category=family-law' },
-            { name: 'Property Law', href: '/blog?category=property-law' },
+            { name: 'Education Technology', href: '/blog?category=education-technology' },
+            { name: 'Teaching Methods', href: '/blog?category=teaching-methods' },
+            { name: 'Study Abroad', href: '/blog?category=study-abroad' },
+            { name: 'Scholarships', href: '/blog?category=scholarships' },
         ]
     },
     {
-        title: 'Legal Information',
+        title: 'Information',
         links: [
             { name: 'Privacy Policy', href: '/privacy' },
             { name: 'Terms of Service', href: '/terms' },
@@ -36,7 +36,7 @@ export default function SitemapPage() {
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold text-gray-900 mb-8">Sitemap</h1>
                 <p className="text-gray-600 mb-12">
-                    Navigate through our legal authority platform.
+                    Navigate through our education news platform.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

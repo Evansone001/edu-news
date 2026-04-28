@@ -13,6 +13,11 @@ const lora = Lora({ subsets: ['latin'], variable: '--font-lora' });
 export const metadata: Metadata = {
   title: 'EDU NEWS Education Blog',
   description: 'Education insights, teaching resources, and learning materials by EDU NEWS',
+  icons: {
+    icon: '/images/favicon.svg',
+    shortcut: '/images/favicon.svg',
+    apple: '/images/favicon.svg',
+  },
 };
 
 export default function RootLayout({

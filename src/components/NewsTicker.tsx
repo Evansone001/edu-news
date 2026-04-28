@@ -19,12 +19,12 @@ export function NewsTicker({ posts }: NewsTickerProps) {
 
   // Get latest 3 posts or fill with placeholders
   const latestPosts = posts.slice(0, 3);
-  const displayPosts = latestPosts.length > 0 
-    ? latestPosts 
+  const displayPosts = latestPosts.length > 0
+    ? latestPosts
     : [
-        { title: "Supreme Court releases new ruling on digital privacy", slug: "#" },
-        { title: "New tax regulations for SMEs announced", slug: "#" },
-        { title: "High Court ruling on property disputes", slug: "#" }
+        { title: "Digital learning tools transforming Kenyan classrooms", slug: "#" },
+        { title: "New scholarship opportunities for STEM students announced", slug: "#" },
+        { title: "Ministry of Education launches teacher training program", slug: "#" }
       ];
 
   useEffect(() => {

@@ -75,16 +75,16 @@ export const mockPosts: Post[] = [
   {
     id: 1,
     _id: '1',
-    title: "Supreme Court Ruling on Digital Privacy Rights",
-    description: "Landmark decision establishes new precedents for digital privacy and data protection in constitutional law",
-    slug: "supreme-court-digital-privacy-rights",
+    title: "Digital Learning Revolution: How Technology is Transforming Education",
+    description: "Exploring the impact of digital tools and online platforms on modern classroom learning and student engagement",
+    slug: "digital-learning-revolution-education",
     mainImage: {
-      url: "https://randomuser.me/api/portraits/women/44.jpg",
-      alt: "Supreme Court building and digital privacy concept"
+      url: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop&q=60",
+      alt: "Digital learning and education technology"
     },
     author: {
       id: '1',
-      title: 'Senior Legal Analyst',
+      title: 'Education Technology Specialist',
       name: "Sarah Mitchell",
       slug: 'sarah-mitchell',
       image: "https://randomuser.me/api/portraits/women/44.jpg"
@@ -93,21 +93,21 @@ export const mockPosts: Post[] = [
     categories: [
       { 
         id: '1',
-        title: "Constitutional Law",
-        slug: 'constitutional-law'
+        title: "Education Technology",
+        slug: 'education-technology'
       },
       { 
         id: '2',
-        title: "Digital Rights",
-        slug: 'digital-rights'
+        title: "Digital Learning",
+        slug: 'digital-learning'
       }
     ],
     _createdAt: "2026-01-15T10:00:00Z",
     _updatedAt: "2026-01-15T10:00:00Z",
-    body: "The Supreme Court has issued a groundbreaking ruling that reshapes the landscape of digital privacy rights under constitutional law. This decision establishes critical precedents for how law enforcement can access digital data...",
+    body: "The education landscape is undergoing a dramatic transformation as digital tools and online platforms become integral to classroom learning. From interactive whiteboards to AI-powered tutoring systems, technology is reshaping how students learn and teachers teach...",
     comments: {},
-    excerpt: "Landmark decision establishes new precedents for digital privacy and data protection in constitutional law",
-    tags: ["supreme-court", "privacy", "constitutional-law", "digital-rights"],
+    excerpt: "Exploring the impact of digital tools and online platforms on modern classroom learning and student engagement",
+    tags: ["education-technology", "digital-learning", "edtech", "online-learning"],
     views: 450,
     likes: 85,
     commentCount: 12,
@@ -119,24 +119,24 @@ export const mockPosts: Post[] = [
   {
     id: 2,
     _id: '2',
-    title: "Corporate Liability in Environmental Law: Recent Developments",
-    description: "Analysis of recent cases establishing enhanced corporate responsibility for environmental violations and climate impact",
-    slug: "corporate-liability-environmental-law",
+    title: "Sustainable Education: Green Initiatives in Kenyan Schools",
+    description: "How schools across Kenya are implementing eco-friendly practices and environmental awareness programs",
+    slug: "sustainable-education-green-initiatives",
     mainImage: {
-      url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60",
-      alt: "Environmental law and corporate responsibility"
+      url: "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&auto=format&fit=crop&q=60",
+      alt: "Green initiatives and environmental education"
     },
     author: {
       id: '2',
-      title: 'Environmental Law Expert',
+      title: 'Environmental Education Specialist',
       name: "Michael Chen",
       slug: 'michael-chen',
       image: "https://randomuser.me/api/portraits/men/32.jpg",
-      bio: "Environmental law attorney and climate policy specialist",
-      website: "https://chenlawoffice.com",
+      bio: "Environmental education advocate and curriculum developer",
+      website: "https://greenedu.org",
       social: {
-        twitter: "michaelchen_esq",
-        linkedin: "in/michael-chen-esq"
+        twitter: "michael_greenedu",
+        linkedin: "in/michael-chen-edu"
       },
       postCount: 15,
       joinedAt: "2025-02-15T00:00:00Z"
@@ -145,27 +145,27 @@ export const mockPosts: Post[] = [
     categories: [
       { 
         id: '3',
-        title: "Environmental Law",
-        slug: 'environmental-law',
-        description: "Environmental regulations and corporate responsibility",
+        title: "Environmental Education",
+        slug: 'environmental-education',
+        description: "Sustainability and green learning initiatives",
         postCount: 25,
         featured: true
       },
       { 
         id: '4',
-        title: "Corporate Law",
-        slug: 'corporate-law',
-        description: "Business law and corporate governance",
+        title: "School Programs",
+        slug: 'school-programs',
+        description: "Curriculum and extracurricular activities",
         postCount: 18,
         featured: true
       }
     ],
     _createdAt: "2026-01-10T14:30:00Z",
     _updatedAt: "2026-01-10T14:30:00Z",
-    body: "Recent judicial decisions have significantly expanded corporate liability in environmental law cases. Courts are now holding companies accountable for climate impact and environmental degradation with unprecedented rigor...",
+    body: "Schools across Kenya are embracing sustainable practices, from solar-powered classrooms to organic gardens. These initiatives not only reduce environmental impact but also teach students valuable lessons about conservation and responsibility...",
     comments: {},
-    excerpt: "Analysis of recent cases establishing enhanced corporate responsibility for environmental violations",
-    tags: ["environmental-law", "corporate-law", "climate-change", "sustainability"],
+    excerpt: "How schools across Kenya are implementing eco-friendly practices and environmental awareness programs",
+    tags: ["environmental-education", "sustainability", "green-schools", "kenya-education"],
     views: 320,
     likes: 65,
     commentCount: 8,
@@ -177,23 +177,23 @@ export const mockPosts: Post[] = [
   {
     id: 3,
     _id: '3',
-    title: "Intellectual Property Rights in the Age of AI: Legal Framework Evolution",
-    description: "Examining how intellectual property laws are adapting to challenges posed by artificial intelligence and machine learning",
-    slug: "intellectual-property-ai-legal-framework",
+    title: "AI in Education: Transforming How Students Learn",
+    description: "Exploring how artificial intelligence is personalizing education and supporting teachers in the classroom",
+    slug: "ai-in-education-transforming-learning",
     mainImage: {
-      url: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=60",
-      alt: "AI and intellectual property law concept"
+      url: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=60",
+      alt: "AI and education technology"
     },
     author: {
       id: '1',
-      title: 'IP Law Specialist',
+      title: 'EdTech Specialist',
       name: "Sarah Mitchell",
       slug: 'sarah-mitchell',
       image: "https://randomuser.me/api/portraits/women/44.jpg",
-      bio: "Intellectual property attorney and technology law expert",
-      website: "https://mitchellip.com",
+      bio: "Education technology expert and curriculum innovator",
+      website: "https://mitchelledu.com",
       social: {
-        twitter: "sarahmitchell_ip",
+        twitter: "sarahmitchell_edu",
         github: "sarahmitchell"
       },
       postCount: 12,
@@ -203,27 +203,27 @@ export const mockPosts: Post[] = [
     categories: [
       { 
         id: '5',
-        title: "Intellectual Property",
-        slug: 'intellectual-property',
-        description: "IP law and technology innovations",
+        title: "AI in Education",
+        slug: 'ai-in-education',
+        description: "Artificial intelligence for learning",
         postCount: 30,
         featured: true
       },
       { 
         id: '6',
-        title: "Technology Law",
-        slug: 'technology-law',
-        description: "Legal frameworks for emerging technologies",
+        title: "EdTech Trends",
+        slug: 'edtech-trends',
+        description: "Emerging technologies in education",
         postCount: 22,
         featured: true
       }
     ],
     _createdAt: "2026-01-05T09:15:00Z",
     _updatedAt: "2026-01-05T09:15:00Z",
-    body: "The rapid advancement of artificial intelligence presents unprecedented challenges to traditional intellectual property frameworks. Courts and legislatures worldwide are grappling with questions of AI-generated content ownership...",
+    body: "Artificial intelligence is revolutionizing education by creating personalized learning experiences for every student. From adaptive learning platforms to AI tutors, technology is helping teachers identify learning gaps and customize instruction...",
     comments: {},
-    excerpt: "Examining how IP laws are adapting to challenges posed by artificial intelligence and machine learning",
-    tags: ["intellectual-property", "artificial-intelligence", "technology-law", "innovation"],
+    excerpt: "Exploring how artificial intelligence is personalizing education and supporting teachers in the classroom",
+    tags: ["artificial-intelligence", "education", "edtech", "personalized-learning"],
     views: 280,
     likes: 52,
     commentCount: 6,
@@ -235,24 +235,24 @@ export const mockPosts: Post[] = [
   {
     id: 4,
     _id: '4',
-    title: "Employment Law Update: Remote Work Regulations Post-Pandemic",
-    description: "Comprehensive analysis of new employment regulations addressing remote work, digital workplace rights, and employer obligations",
-    slug: "employment-law-remote-work-regulations",
+    title: "Remote Learning Best Practices: Lessons from the Pandemic",
+    description: "How educators are applying lessons learned during remote learning to enhance hybrid and in-person education",
+    slug: "remote-learning-best-practices-pandemic",
     mainImage: {
-      url: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&auto=format&fit=crop&q=60",
-      alt: "Remote work and employment law"
+      url: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=800&auto=format&fit=crop&q=60",
+      alt: "Remote learning and online education"
     },
     author: {
       id: '3',
-      title: 'Labor Law Attorney',
+      title: 'Education Policy Researcher',
       name: "Robert Thompson",
       slug: 'robert-thompson',
       image: "https://randomuser.me/api/portraits/men/45.jpg",
-      bio: "Employment law specialist and workers' rights advocate",
-      website: "https://thompsonlaborlaw.com",
+      bio: "Education researcher and curriculum development expert",
+      website: "https://thompsonedu.org",
       social: {
-        twitter: "robert_esq",
-        linkedin: "in/robert-thompson-esq"
+        twitter: "robert_edu",
+        linkedin: "in/robert-thompson-edu"
       },
       postCount: 20,
       joinedAt: "2024-06-01T00:00:00Z"
@@ -261,27 +261,27 @@ export const mockPosts: Post[] = [
     categories: [
       { 
         id: '7',
-        title: "Employment Law",
-        slug: 'employment-law',
-        description: "Workplace regulations and employee rights",
+        title: "Remote Learning",
+        slug: 'remote-learning',
+        description: "Online and hybrid education models",
         postCount: 35,
         featured: true
       },
       { 
         id: '8',
-        title: "Labor Relations",
-        slug: 'labor-relations',
-        description: "Union law and collective bargaining",
+        title: "Teaching Methods",
+        slug: 'teaching-methods',
+        description: "Pedagogical approaches and strategies",
         postCount: 15,
         featured: false
       }
     ],
     _createdAt: "2026-01-02T16:45:00Z",
     _updatedAt: "2026-01-02T16:45:00Z",
-    body: "The post-pandemic workplace has fundamentally transformed employment law landscapes. New regulations address everything from home office stipends to digital surveillance concerns...",
+    body: "The pandemic forced educators worldwide to adapt to remote learning. Now, those lessons are being applied to create more flexible, resilient education systems that combine the best of in-person and digital learning...",
     comments: {},
-    excerpt: "Comprehensive analysis of new employment regulations addressing remote work and digital workplace rights",
-    tags: ["employment-law", "remote-work", "labor-rights", "workplace-regulations"],
+    excerpt: "How educators are applying lessons learned during remote learning to enhance hybrid and in-person education",
+    tags: ["remote-learning", "hybrid-education", "teaching-strategies", "online-learning"],
     views: 190,
     likes: 38,
     commentCount: 4,
@@ -293,24 +293,24 @@ export const mockPosts: Post[] = [
   {
     id: 5,
     _id: '5',
-    title: "International Trade Law: Navigating New Tariff Structures",
-    description: "Expert analysis of recent changes in international trade agreements and their impact on global commerce",
-    slug: "international-trade-law-tariff-structures",
+    title: "International Education Exchange Programs: New Opportunities for Kenyan Students",
+    description: "Exploring scholarship programs and partnerships opening doors for Kenyan students to study abroad",
+    slug: "international-education-exchange-programs",
     mainImage: {
-      url: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=60",
-      alt: "International trade and commerce"
+      url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
+      alt: "International education and student exchange"
     },
     author: {
       id: '4',
-      title: 'Trade Law Counsel',
+      title: 'International Education Advisor',
       name: "Elena Rodriguez",
       slug: 'elena-rodriguez',
       image: "https://randomuser.me/api/portraits/women/38.jpg",
-      bio: "International trade lawyer and policy advisor",
-      website: "https://rodrigueztradecounsel.com",
+      bio: "International education consultant and scholarship specialist",
+      website: "https://rodriguezedu.com",
       social: {
-        twitter: "elena_trade_esq",
-        linkedin: "in/elena-rodriguez-esq"
+        twitter: "elena_edu_abroad",
+        linkedin: "in/elena-rodriguez-edu"
       },
       postCount: 18,
       joinedAt: "2024-09-15T00:00:00Z"
@@ -319,27 +319,27 @@ export const mockPosts: Post[] = [
     categories: [
       { 
         id: '9',
-        title: "International Law",
-        slug: 'international-law',
-        description: "Cross-border legal frameworks and treaties",
+        title: "Study Abroad",
+        slug: 'study-abroad',
+        description: "International education opportunities",
         postCount: 28,
         featured: true
       },
       { 
         id: '10',
-        title: "Trade Law",
-        slug: 'trade-law',
-        description: "International commerce and trade regulations",
+        title: "Scholarships",
+        slug: 'scholarships',
+        description: "Funding opportunities for students",
         postCount: 20,
         featured: true
       }
     ],
     _createdAt: "2025-12-28T11:20:00Z",
     _updatedAt: "2025-12-28T11:20:00Z",
-    body: "Recent developments in international trade law have created complex new tariff structures that businesses must navigate. This analysis examines the implications for global supply chains...",
+    body: "New international partnerships and scholarship programs are creating unprecedented opportunities for Kenyan students to pursue education abroad. From full scholarships to exchange programs, the landscape of international education is more accessible than ever...",
     comments: {},
-    excerpt: "Expert analysis of recent changes in international trade agreements and their impact on global commerce",
-    tags: ["international-law", "trade-law", "tariffs", "global-commerce"],
+    excerpt: "Exploring scholarship programs and partnerships opening doors for Kenyan students to study abroad",
+    tags: ["study-abroad", "scholarships", "international-education", "kenya-students"],
     views: 165,
     likes: 29,
     commentCount: 3,

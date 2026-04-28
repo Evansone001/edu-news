@@ -1,5 +1,5 @@
 /**
- * Drop-in replacement for the fake visitor counter in NewSheriaHero.
+ * Drop-in replacement for the fake visitor counter in EDUNEWS Hero.
  *
  * Usage in the hero:
  *   import { ReaderPresenceBadge } from "@/components/ReaderPresenceBadge";

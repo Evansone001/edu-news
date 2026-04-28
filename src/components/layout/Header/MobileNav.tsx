@@ -27,8 +27,8 @@ interface MobileNavigationProps {
     language: 'en' | 'es' | 'fr' | 'de' | 'pt' | 'sw' | 'zh' | 'ar';
     region: 'na' | 'eu' | 'asia' | 'africa' | 'sa' | 'oceania';
   };
-  currentPlan?: 'free' | 'pro' | 'enterprise' | 'corporate';
-  onQuickAction?: (action: 'save_article' | 'set_alert' | 'download_brief') => void;
+  currentPlan?: 'free' | 'pro' | 'premium';
+  onQuickAction?: (action: 'save_article' | 'set_alert' | 'download_article') => void;
   // AUTH METHODS - optional for backward compatibility
   onGoogleSignIn?: () => void;
   onMicrosoftSignIn?: () => void;
@@ -138,7 +138,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
   onLanguageChange
 }) => {
   const panelRef = useRef<HTMLDivElement>(null);
-  const [showLanguageSelector, setShowLanguageSelector] = useState(false);
+  // const [showLanguageSelector, setShowLanguageSelector] = useState(false);
   const [showAuthMethods, setShowAuthMethods] = useState(false);
 
   useLockBodyScroll(isOpen);
@@ -160,7 +160,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     onClose();
   }, [onSignOut, onClose]);
 
-  const handleQuickAction = useCallback((action: 'save_article' | 'set_alert' | 'download_brief') => {
+  const handleQuickAction = useCallback((action: 'save_article' | 'set_alert' | 'download_article') => {
     if (onQuickAction) {
       onQuickAction(action);
     }
@@ -227,7 +227,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
         animate={{ x: 0 }}
         exit={{ x: '-100%' }}
         transition={{ type: 'tween', duration: 0.3, ease: 'easeOut' }}
-        className="fixed inset-y-0 left-0 z-[101] w-[85vw] max-w-sm bg-white dark:bg-gray-900 shadow-2xl md:hidden overflow-y-auto"
+        className="fixed inset-y-0 left-0 z-[101] w-[85vw] max-w-sm bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 shadow-2xl md:hidden overflow-y-auto"
         role="dialog"
         aria-modal="true"
         aria-label="Main navigation"

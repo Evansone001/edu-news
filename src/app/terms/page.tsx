@@ -10,25 +10,25 @@ export default function TermsPage() {
                     <p>Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
 
                     <p>
-                        Welcome to NewSheria. By using our website, you agree to comply with and be bound by the following terms
+                        Welcome to EDUNEWS. By using our website, you agree to comply with and be bound by the following terms
                         and conditions of use.
                     </p>
 
                     <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Acceptance of Terms</h2>
                     <p>
-                        By accessing or using NewSheria, you agree to be bound by these Terms of Service and all applicable laws
+                        By accessing or using EDUNEWS, you agree to be bound by these Terms of Service and all applicable laws
                         and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
                     </p>
 
                     <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Use License</h2>
                     <p>
-                        Permission is granted to temporarily download one copy of the materials (information or software) on News
-                        Sheria's website for personal, non-commercial transitory viewing only.
+                        Permission is granted to temporarily download one copy of the materials (information or software) on EDUNEWS
+                        website for personal, non-commercial transitory viewing only.
                     </p>
 
                     <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Disclaimer</h2>
                     <p>
-                        The materials on NewSheria's website are provided on an 'as is' basis. NewSheria makes no warranties,
+                        The materials on EDUNEWS website are provided on an 'as is' basis. EDUNEWS makes no warranties,
                         expressed or implied, and hereby disclaims and negates all other warranties including, without limitation,
                         implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement
                         of intellectual property or other violation of rights.

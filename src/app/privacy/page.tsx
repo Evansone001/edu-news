@@ -10,7 +10,7 @@ export default function PrivacyPage() {
                     <p>Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
 
                     <p>
-                        At NewSheria, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose,
+                        At EDUNEWS, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose,
                         and safeguard your information when you visit our website.
                     </p>
 
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
                     <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contact Us</h2>
                     <p>
-                        If you have any questions about this Privacy Policy, please contact us at info@sherianews.co.ke.
+                        If you have any questions about this Privacy Policy, please contact us at info@edunews.co.ke.
                     </p>
                 </div>
             </div>

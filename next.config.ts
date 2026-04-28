@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'admin.sherianews.co.ke',
+        hostname: 'admin.edunews.co.ke',
       },
     ],
     formats: ['image/avif', 'image/webp'],

@@ -11,7 +11,7 @@ interface ViewCountData {
 const getViewedPosts = (): Set<string> => {
   if (typeof window === 'undefined') return new Set();
   try {
-    const viewed = sessionStorage.getItem('sheria_viewed_posts');
+    const viewed = sessionStorage.getItem('edunews_viewed_posts');
     return new Set(viewed ? JSON.parse(viewed) : []);
   } catch {
     return new Set();
@@ -23,7 +23,7 @@ const markPostAsViewed = (slug: string) => {
   try {
     const viewed = getViewedPosts();
     viewed.add(slug);
-    sessionStorage.setItem('sheria_viewed_posts', JSON.stringify([...viewed]));
+    sessionStorage.setItem('edunews_viewed_posts', JSON.stringify([...viewed]));
   } catch {
     // Ignore storage errors
   }
